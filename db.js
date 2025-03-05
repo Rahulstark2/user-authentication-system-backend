@@ -40,8 +40,7 @@ mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
         type: String,
         trim: true,  
         minlength: [6, 'OTP must be minimum 6 characters'], 
-        maxlength: [6, 'OTP must be maximum 6 characters'],
-        default: '000000'
+        maxlength: [6, 'OTP must be maximum 6 characters']
       },
       otpExpiresAt: { 
         type: Date 
